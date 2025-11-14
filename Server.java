@@ -67,7 +67,7 @@ public class Server{
                     
                     String msg = in.readLine();
                     if(!msg.equals("12345")){ //read null, remote closed
-                        out.println("dont handshake");
+                        out.println("couldn't handshake");
                         out.flush();
                         sock.close();
                         return;
